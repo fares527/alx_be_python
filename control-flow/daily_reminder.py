@@ -1,9 +1,9 @@
-task = input(" input a task description: ")
-priority_variable = input("the task’s priority (high, medium, low): ")
+task = input(" enter your task: ")
+priority = input("the task’s priority (high, medium, low): ")
 time_bound = input(" time-bound (yes or no): ")
 
 
-match priority_variable:
+match priority:
     case "high":
       reminder = f"**Urgent!** {task}"
       if time_bound == "yes":
