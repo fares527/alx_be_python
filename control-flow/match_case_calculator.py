@@ -17,4 +17,4 @@ match operat:
       case _:
           result = "Invalid operation"
 
-print("The result is", result)
+print(f"The result is {result} ")
