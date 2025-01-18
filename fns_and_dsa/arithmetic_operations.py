@@ -10,7 +10,7 @@ def perform_operation(num1, num2, operation):
     elif operation== multiply:
         print(num1 * num2)
     elif operation== divide:
-        if num2 ==0:
-            print("cant divide by zero")
+        if num2 == 0:
+            return("cant divide by zero")
         print(num1 / num2)
 
