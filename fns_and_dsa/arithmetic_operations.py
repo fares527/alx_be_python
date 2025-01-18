@@ -1,4 +1,4 @@
-def perform_operation():
+def perform_operation(num1, num2, operation):
     num1 =float(input("Enter your first number: "))
     num2 =float(input("Enter your second number: "))
     operation =input("Enter your operation (add, subtract, multiply, divide): ").lower()
