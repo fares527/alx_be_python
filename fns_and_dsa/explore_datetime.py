@@ -11,6 +11,7 @@ number_of_days = input(int("Enter number of days: "))
 def calculate_future_date():
     display_current_datetime()
     future_date = current_date + timedelta(number_of_days)
+    future_date = future_date.strftime("%Y-%m-%d")
     print(future_date)
     
 
