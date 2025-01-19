@@ -4,18 +4,18 @@ class BankAccount:
        
     def deposit(self , amount):
         if amount <=0 :
-            raise ValueError("account balance must be positive number")
+            raise ValueError("current balance must be positive number")
         self.current_balance += amount
 
     def withdraw(self, amount ):
          if amount <=0 :
-            raise ValueError("account balance must be positive number")
+            raise ValueError("curent balance must be positive number")
          if amount > self.current_balance :
              return False
          self.current_balance -= amount
 
     def display_balance(self):
-        print(f"current balance :{self.current_balance: .2f}") 
+        print(f"current balance:{self.current_balance: .2f}") 
          
         
         
