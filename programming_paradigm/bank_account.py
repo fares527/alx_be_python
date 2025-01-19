@@ -14,11 +14,11 @@ class BankAccount:
          if amount > self.current_balance :
              return False
          self.current_balance -= amount
-         return self.current_balance
+         return True
 
     def display_balance(self):
-        self.current_balance
-        return f"Current Balance:{self.current_balance: .2f}"
+        
+        return f"Current Balance: ${self.current_balance: .2f}"
         
          
         
