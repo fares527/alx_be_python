@@ -17,6 +17,8 @@ def convert_to_fahrenheit(celsius):
 
 
 def main():
+    convert_to_fahrenheit(celsius)
+    convert_to_celsius(fahrenheit)
 
     while True:
         try:
