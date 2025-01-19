@@ -15,7 +15,7 @@ class BankAccount:
          self.current_balance -= amount
 
     def display_balance(self):
-        print(f"The current balance = {self.current_balance: .2f} $ ") 
+        print(f"current balance :{self.current_balance: .2f}") 
          
         
         
