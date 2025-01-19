@@ -6,6 +6,7 @@ class BankAccount:
         if amount <=0 :
             raise ValueError("current balance must be positive number")
         self.current_balance += amount
+        return self.current_balance
 
     def withdraw(self, amount ):
          if amount <=0 :
@@ -13,6 +14,7 @@ class BankAccount:
          if amount > self.current_balance :
              return False
          self.current_balance -= amount
+         return self.current_balance
 
     def display_balance(self):
         return f"Current Balance: {self.current_balance: .2f}"
