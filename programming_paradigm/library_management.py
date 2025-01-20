@@ -10,6 +10,21 @@ class Book:
   def is_checked_out(self):
     """Returns True if the book is checked out, False otherwise."""
     return self._is_checked_out
+  
+  def return_book(self, title):
+    """Returns a book by title.
+
+    Args:
+      title: The title of the book to return.
+
+    Returns:
+      A message indicating success or failure.
+    """
+    for book in self._books:
+      if book.title == title and book.is_checked_out():
+        book._is_checked_out = False
+        return f"Successfully returned '{title}'."
+    return f"Sorry, '{title}' is not currently checked out."
 
 class Library:
   """Represents a library with a collection of books."""
