@@ -18,7 +18,7 @@ class TestSimpleCalculator(unittest.TestCase):
 
 # Remember to write additional test methods for subtract, multiply, and divide.
     
-    def test_subtract(self):
+    def test_subtraction(self):
         self.assertEqual(self.calc.subtract(3, 1), 2)
         self.assertEqual(self.calc.subtract(-5, 3), -2)
 
