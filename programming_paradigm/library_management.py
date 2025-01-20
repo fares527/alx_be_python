@@ -11,7 +11,7 @@ class Book:
     """Returns True if the book is checked out, False otherwise."""
     return self._is_checked_out
   
-  def return_book(self, title):
+  def return_book(self):
     """Returns a book by title.
 
     Args:
